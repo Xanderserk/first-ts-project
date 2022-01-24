@@ -1,0 +1,146 @@
+.section-time-saving {
+  position: relative;
+  padding: 100px 60px 130px;
+
+  @include maxWidth(1440) {
+    padding: 80px 40px 100px;
+  }
+
+  &__container {
+    margin-bottom: 70px;
+  }
+
+  &__container-title {
+    margin-left: 20px;
+  }
+
+  &__container-image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 50%;
+  }
+
+  &__content {
+    width: 100%;
+    margin-bottom: 80px;
+
+    @include maxWidth(1600) {
+      margin-bottom: 60px;
+    }
+
+    @include maxWidth(1440) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content-left {
+    width: 40%;
+  }
+
+  &__content-right {
+    width: 60%;
+  }
+
+  &__content-image {
+    margin-right: 32px;
+
+    @include maxWidth(1440) {
+      width: 100px;
+      margin-right: 28px;
+    }
+
+    @include maxWidth(1280) {
+      width: 80px;
+      margin-right: 24px;
+    }
+  }
+
+  &__content-wrap {
+    margin-right: 60px;
+
+    @include maxWidth(1600) {
+      margin-right: 36px;
+    }
+
+    @include maxWidth(1440) {
+      margin-right: 30px;
+    }
+
+    @include maxWidth(1040) {
+      margin-right: 24px;
+    }
+  }
+
+  &__content-description {
+    padding-right: 30px;
+
+    @include maxWidth(1440) {
+      font-size: 28px;
+    }
+
+    @include maxWidth(1280) {
+      font-size: 22px;
+    }
+
+    @include maxWidth(1280) {
+      font-size: 20px;
+    }
+  }
+
+  &__content-value {
+    white-space: nowrap;
+    color: #007605;
+
+    @include maxWidth(1440) {
+      font-size: 36px;
+    }
+  }
+
+  &__content-text {
+    word-break: normal;
+    color: #007605;
+
+    @include maxWidth(1440) {
+      font-size: 28px;
+    }
+
+    @include maxWidth(1280) {
+      font-size: 20px;
+    }
+  }
+
+  &__content-human-image {
+    width: 41px;
+    height: 140px;
+    margin-right: 20px;
+    transition: 0.4s;
+    opacity: 1;
+    background-image: url('assets/images/section-time-saving__content-color-human.png');
+
+    @include maxWidth(1600) {
+      margin-right: 14px;
+    }
+  
+    @include maxWidth(1440) {
+      width: 26px;
+      height: 92px;
+      margin-right: 10px;
+      background-image: url('assets/images/section-time-saving__content-color-human-small.png');
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &--not-painted {
+      opacity: 0.8;
+      background-image: url('assets/images/section-time-saving__content-gray-human.png');
+
+      @include maxWidth(1440) {
+        background-image: url('assets/images/section-time-saving__content-gray-human-small.png');
+      }
+    }
+  }
+}

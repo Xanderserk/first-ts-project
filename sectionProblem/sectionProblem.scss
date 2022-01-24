@@ -1,0 +1,134 @@
+.section-problem {
+  padding: 40px 0 0;
+  position: relative;
+
+  &__wrap {
+    width: 1685px;
+    margin: 0 auto;
+
+    @include maxWidth(1760) {
+      width: 1500px;
+    }
+
+    @include maxWidth(1640) {
+      width: 1400px;
+    }
+
+    @include maxWidth(1460) {
+      width: 1300px;
+    }
+
+    @include maxWidth(1320) {
+      width: 1200px;
+    }
+
+    @include maxWidth(1220) {
+      width: 1100px;
+    }
+
+    @include maxWidth(1140) {
+      width: 1000px;
+    }
+
+    @include maxWidth(1040) {
+      width: 900px;
+    }
+
+    @include maxWidth(980) {
+      width: 800px;
+    }
+
+    @include maxWidth(840) {
+      width: 728px;
+    }
+
+    @include maxWidth(760) {
+      width: 600px;
+    }
+
+    @include maxWidth(630) {
+      width: 320px;
+    }
+
+  }
+
+  &__inner {
+
+    @include maxWidth(630) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__header-title {
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-top: 100px;
+
+    @include maxWidth(1000) {
+      padding-top: 50px;
+    }
+  }
+
+  &__logo {
+    width: 935px;
+
+    @include maxWidth(1760) {
+      width: 672px;
+    }
+
+    @include maxWidth(1640) {
+      width: 600px;
+    }
+
+    @include maxWidth(1280) {
+      width: 572px;
+    }
+
+    @include maxWidth(1120) {
+      width: 510px;
+    }
+
+    @include maxWidth(1040) {
+      width: 480px;
+    }
+
+    @include maxWidth(1000) {
+      width: 446px;
+    }
+
+    @include maxWidth(980) {
+      width: 300px;
+    }
+
+    @include maxWidth(768) {
+      width: 300px;
+    }
+
+    @include maxWidth(640) {
+      width: 300px;
+    }
+
+    @include maxWidth(360) {
+      width: 300px;
+    }
+  }
+
+  &__content-image {
+    position: absolute;
+    z-index: -1;
+    top: 66%;
+    left: 0;
+    width: 19%;
+
+    @include maxWidth(640) {
+      top: 45%;
+      width: 16%;
+    }
+  }
+
+  &__content-title {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
